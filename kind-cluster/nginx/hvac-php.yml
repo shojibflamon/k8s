@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: php-pod
+spec:
+  containers:
+    - name: php
+      image: shojibflamon/docker-hvac-php:latest
+      ports:
+        - containerPort: 80

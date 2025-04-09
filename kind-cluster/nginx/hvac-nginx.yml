@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: nginx
+      image: shojibflamon/docker-hvac-nginx:latest
+      ports:
+        - containerPort: 80
