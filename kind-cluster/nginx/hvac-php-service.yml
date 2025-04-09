@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: php-service
+  namespace: hvac
+spec:
+  selector:
+    app: php
+  ports:
+  - protocol: TCP
+    port: 9000
+    targetPort: 9000
+
